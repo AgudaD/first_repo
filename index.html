@@ -1,16 +1,364 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Welcome home</p>
 
-    <div>
-        <button>Click me!</button>
-        <button>Don't click me!</button>
+    <title>NOVA STORE | Shop Online</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                NOVA<span>STORE.</span>
+            </a>
+
+            <!-- Mobile navigation toggle -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a href="#products" class="btn nav-btn">
+                            Shop Now
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 hero-content">
+                <p class="hero-subtitle">WELCOME TO NOVA STORE</p>
+
+                <h1>
+                    Discover Your
+                    <span>Perfect Style.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore our exclusive collection of modern fashion
+                    and lifestyle essentials. Quality products,
+                    beautiful designs, and amazing prices.
+                </p>
+
+                <a href="#products" class="btn primary-btn">
+                    Explore Collection →
+                </a>
+            </div>
+
+            <div class="col-lg-6 hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1000"
+                    alt="Modern fashion store interior"
+                    class="img-fluid">
+            </div>
+
+        </div>
     </div>
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+<section class="features py-4">
+    <div class="container">
+        <div class="row text-center g-4">
+
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span>🚚</span>
+                    <h6>Free Shipping</h6>
+                    <p>On selected orders</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span>💎</span>
+                    <h6>Premium Quality</h6>
+                    <p>Carefully selected items</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span>🔒</span>
+                    <h6>Secure Payment</h6>
+                    <p>Safe shopping experience</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span>💬</span>
+                    <h6>24/7 Support</h6>
+                    <p>We're here to help</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PRODUCTS SECTION ================= -->
+<section class="products-section" id="products">
+    <div class="container">
+
+        <div class="section-heading text-center">
+            <p>OUR COLLECTION</p>
+            <h2>Featured Products</h2>
+            <span>Discover our most popular products.</span>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                            alt="Classic wristwatch">
+                        <span class="product-tag">Popular</span>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Classic Watch</h5>
+                        <p>Elegant design for every occasion.</p>
+                        <div class="product-bottom">
+                            <span class="price">$49.99</span>
+                            <a href="#contact" class="shop-btn">Shop Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                            alt="Red sports sneakers">
+                        <span class="product-tag">New</span>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Sport Sneakers</h5>
+                        <p>Comfort and style for everyday wear.</p>
+                        <div class="product-bottom">
+                            <span class="price">$79.99</span>
+                            <a href="#contact" class="shop-btn">Shop Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600"
+                            alt="Stylish leather handbag">
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Luxury Handbag</h5>
+                        <p>A beautiful accessory for your style.</p>
+                        <div class="product-bottom">
+                            <span class="price">$59.99</span>
+                            <a href="#contact" class="shop-btn">Shop Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                            alt="Wireless headphones">
+                        <span class="product-tag">Sale</span>
+                    </div>
+
+                    <div class="product-info">
+                        <h5>Wireless Headphones</h5>
+                        <p>Enjoy your music with premium sound.</p>
+                        <div class="product-bottom">
+                            <span class="price">$89.99</span>
+                            <a href="#contact" class="shop-btn">Shop Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= ABOUT / PROMOTION ================= -->
+<section class="promotion" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+                <p>LIMITED TIME OFFER</p>
+                <h2>Upgrade Your Style Today!</h2>
+                <span>
+                    Find your favorites and enjoy a fresh shopping experience.
+                </span>
+                <br><br>
+                <a href="#products" class="btn promotion-btn">
+                    Shop Collection →
+                </a>
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <div class="promotion-icon">🛍️</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter" id="contact">
+    <div class="container text-center">
+
+        <h2>Stay Updated!</h2>
+
+        <p>
+            Subscribe to our newsletter for new arrivals and special offers.
+        </p>
+
+        <!-- Visual newsletter form; backend integration is not included -->
+        <form class="newsletter-form"
+              onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+
+            <input type="email"
+                   placeholder="Enter your email address"
+                   aria-label="Email address"
+                   required>
+
+            <button type="submit">Subscribe</button>
+
+        </form>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-5">
+                <h3>NOVA<span>STORE.</span></h3>
+                <p>
+                    Bringing you quality products and modern styles
+                    for a better shopping experience.
+                </p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h5>Quick Links</h5>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: hello@novastore.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Location: Online Store</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom text-center">
+            <p>
+                © 2026 NOVA STORE. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
 </body>
 </html>
